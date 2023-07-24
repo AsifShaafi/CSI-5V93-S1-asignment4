@@ -18,10 +18,10 @@
   <!-- Create a blog page with some menu items, then a heading, subheading, some paragraphs and image -->
   <body>
     <div class="topnav" id="myTopnav">
-      <a href="#home" class="active">Home</a>
-      <a href="#recent">Recent</a>
-      <a href="#archive">Archive</a>
-      <a href="#about">About</a>
+      <a class="active">Home</a>
+      <a>Recent</a>
+      <a>Archive</a>
+      <a>About</a>
       <a href="javascript:void(0);" class="icon" onclick="navFunction()">
         <i class="fa fa-bars"></i>
       </a>
@@ -121,12 +121,12 @@
 
         <div id="blog_comment_form">
           <!-- Text field for the comment -->
-          <textarea id="subject" name="subject" placeholder="Write a comment ..." style="height:200px"></textarea>
+          <textarea id="subject" name="subject" aria-label="Write a comment" placeholder="Write a comment ..." style="height:200px"></textarea>
           
           <!-- Input field for the comment user's name, email and website, with option to save the data for future comment -->
           <div id="comment_user_info_form">
-          <input class="user_info_form" type="text" id="name" name="name" placeholder="Name" />
-          <input class="user_info_form" type="text" id="email" name="email" placeholder="Email" />
+          <input aria-level="Enter your name" class="user_info_form" type="text" id="name" name="name" placeholder="Name" />
+          <input aria-level="Enter your email" class="user_info_form" type="text" id="email" name="email" placeholder="Email" />
           </div>
 
           <button type="button" class="pure-button pure-button-primary user_info_form" id="comment_submit_btn">Post Comment</button>
