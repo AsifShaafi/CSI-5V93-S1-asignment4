@@ -112,3 +112,19 @@ tr:nth-child(even) {
 #subject {
   padding: 10px;
 }
+
+.visually-hidden {
+  /* clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px; */
+  display: none;
+  background-color: #04AA6D;
+  padding: 4px;
+  margin: 4px 0px;
+  text-align: center;
+  color: white;
+}

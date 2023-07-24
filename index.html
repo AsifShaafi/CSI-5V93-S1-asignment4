@@ -19,8 +19,8 @@
   <body>
     <div class="topnav" id="myTopnav">
       <a href="#home" class="active">Home</a>
-      <a href="#news">News</a>
-      <a href="#contact">Contact</a>
+      <a href="#recent">Recent</a>
+      <a href="#archive">Archive</a>
       <a href="#about">About</a>
       <a href="javascript:void(0);" class="icon" onclick="navFunction()">
         <i class="fa fa-bars"></i>
@@ -115,6 +115,10 @@
 
         <h3>Leave a Comment</h3>
 
+        <div id="hiddenAlertContainer" role="alert" class="visually-hidden">
+          <p>Your comment has been posted!</p>
+        </div>
+
         <div id="blog_comment_form">
           <!-- Text field for the comment -->
           <textarea id="subject" name="subject" placeholder="Write a comment ..." style="height:200px"></textarea>
@@ -125,12 +129,15 @@
           <input class="user_info_form" type="text" id="email" name="email" placeholder="Email" />
           </div>
 
-          <button type="submit" class="pure-button pure-button-primary user_info_form">Post Comment</button>
+          <button type="button" class="pure-button pure-button-primary user_info_form" id="comment_submit_btn">Post Comment</button>
 
         </div>
 
       </div>
     </div>
+
+  <!-- Importing JQuery at the end of the HTML page -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Importing local JS files -->
     <script src="js/script.js"></script>
