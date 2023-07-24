@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+      <!-- Importing PureCSS library -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+    integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous" />
+
+    <title>Blog | Assignment 4</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <!-- Create a blog page with some menu items, then a heading, subheading, some paragraphs and image -->
+  <body>
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="active">Home</a>
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="navFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div class="container">
+      <header>
+        <h1>Recipe Blog</h1>
+      </header>
+
+      <h2>Create Classic Grilled Cheese Sandwich!</h2>
+      <img
+      id="recipe_image"
+        src="images/vegetarian-grilled-cheese-tomato-soup.webp"
+        alt="An image of vegetarian grilled cheese sandwich with tomato soup"
+        width="400"
+        height="300"
+      />
+      <p>
+        The delightful duo of a juicy, grilled cheese sandwich is among the top-tier 
+        of comfort food combinations. This comforting food, while often high in fat, 
+        can be tweaked for a healthier version. Our grilled cheese variation is inspired by the
+        delicious Southern classic, pimento cheese, cleverly incorporating
+        nutritious elements like roasted peppers and Greek yogurt to offset the
+        caloric content of the cheese. Enjoy this comforting recipe with
+        just half the usual calories.
+      </p>
+
+      <h3>The Grilled Pimento Cheese Sandwich</h3>
+      <p>
+        Here are the ingredients and step by step process for making the item
+        that will serve 4 people.
+      </p>
+      <h3>Ingredients</h3>
+      <!-- Create a table for the item and the measurement -->
+
+      <div id="table_content">
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Quantity</th>
+          </tr>
+          <tr>
+            <td>Finely shredded sharp Cheddar cheese</td>
+            <td>1 1⁄4 cups</td>
+          </tr>
+          <tr>
+            <td>Diced pimentos</td>
+            <td>1 jar (4 oz)</td>
+          </tr>
+          <tr>
+            <td>Jalapeño pepper, seeded and minced</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>Finely sliced scallions</td>
+            <td>1⁄4 cup</td>
+          </tr>
+          <tr>
+            <td>2% Greek yogurt</td>
+            <td>1⁄4 cup</td>
+          </tr>
+          <tr>
+            <td>Olive-oil mayonnaise</td>
+            <td>1 Tbsp</td>
+          </tr>
+          <tr>
+            <td>Bread</td>
+            <td>8 slices</td>
+          </tr>
+          <tr>
+            <td>Butter</td>
+            <td>Your choice</td>
+          </tr>
+        </table>
+      </div>
+
+      <h3>Directions</h3>
+
+      <div>
+        <ol>
+          <li>Combine the cheese, pimentos, jalapeño, scallions, yogurt, mayonnaise, and a few shakes of Tabasco in a mixing bowl.</li>
+          <li>Spread the mixture on 4 slices of bread and top with the remaining 4 slices.</li>
+          <li>Heat a large nonstick skillet over medium heat. Spread the outside of each sandwich with butter and cook until golden brown on both sides and the cheese is melted, about 3 minutes per side.</li>
+          <li>Cut each sandwich in half and enjoy!</li>
+        </ol>
+      </div>
+
+      <hr />
+
+      <div>
+
+        <h3>Leave a Comment</h3>
+
+        <div id="blog_comment_form">
+          <!-- Text field for the comment -->
+          <textarea id="subject" name="subject" placeholder="Write a comment ..." style="height:200px"></textarea>
+          
+          <!-- Input field for the comment user's name, email and website, with option to save the data for future comment -->
+          <div id="comment_user_info_form">
+          <input class="user_info_form" type="text" id="name" name="name" placeholder="Name" />
+          <input class="user_info_form" type="text" id="email" name="email" placeholder="Email" />
+          </div>
+
+          <button type="submit" class="pure-button pure-button-primary user_info_form">Post Comment</button>
+
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Importing local JS files -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
