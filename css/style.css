@@ -104,8 +104,8 @@ tr:nth-child(even) {
 
 .user_info_form {
   display: inline-block;
-  width: 20%;
-  margin: 10px 0px;
+  width: 28%;
+  /* margin: 10px 0px; */
   padding: 10px;
 }
 
@@ -114,6 +114,7 @@ tr:nth-child(even) {
 }
 
 #comment_submit_btn {
+  margin-top: 24px;
   background-color: rgb(24, 103, 168);
 }
 
@@ -131,4 +132,10 @@ tr:nth-child(even) {
   margin: 4px 0px;
   text-align: center;
   color: white;
+}
+
+.user_info_form_label {
+  display: inline-block;
+  width: 100%;
+  margin: 10px 0px;
 }
