@@ -7,9 +7,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-      <!-- Importing PureCSS library -->
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
-    integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous" />
+    <!-- Importing PureCSS library -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"
+      integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
+      crossorigin="anonymous"
+    />
 
     <title>Blog | Assignment 4</title>
     <link rel="stylesheet" href="css/style.css" />
@@ -33,20 +37,20 @@
 
       <h2>Create Classic Grilled Cheese Sandwich!</h2>
       <img
-      id="recipe_image"
+        id="recipe_image"
         src="images/vegetarian-grilled-cheese-tomato-soup.webp"
         alt="An image of vegetarian grilled cheese sandwich with tomato soup"
         width="400"
         height="300"
       />
       <p>
-        The delightful duo of a juicy, grilled cheese sandwich is among the top-tier 
-        of comfort food combinations. This comforting food, while often high in fat, 
-        can be tweaked for a healthier version. Our grilled cheese variation is inspired by the
-        delicious Southern classic, pimento cheese, cleverly incorporating
-        nutritious elements like roasted peppers and Greek yogurt to offset the
-        caloric content of the cheese. Enjoy this comforting recipe with
-        just half the usual calories.
+        The delightful duo of a juicy, grilled cheese sandwich is among the
+        top-tier of comfort food combinations. This comforting food, while often
+        high in fat, can be tweaked for a healthier version. Our grilled cheese
+        variation is inspired by the delicious Southern classic, pimento cheese,
+        cleverly incorporating nutritious elements like roasted peppers and
+        Greek yogurt to offset the caloric content of the cheese. Enjoy this
+        comforting recipe with just half the usual calories.
       </p>
 
       <h3>The Grilled Pimento Cheese Sandwich</h3>
@@ -102,9 +106,19 @@
 
       <div>
         <ol>
-          <li>Combine the cheese, pimentos, jalapeño, scallions, yogurt, mayonnaise, and a few shakes of Tabasco in a mixing bowl.</li>
-          <li>Spread the mixture on 4 slices of bread and top with the remaining 4 slices.</li>
-          <li>Heat a large nonstick skillet over medium heat. Spread the outside of each sandwich with butter and cook until golden brown on both sides and the cheese is melted, about 3 minutes per side.</li>
+          <li>
+            Combine the cheese, pimentos, jalapeño, scallions, yogurt,
+            mayonnaise, and a few shakes of Tabasco in a mixing bowl.
+          </li>
+          <li>
+            Spread the mixture on 4 slices of bread and top with the remaining 4
+            slices.
+          </li>
+          <li>
+            Heat a large nonstick skillet over medium heat. Spread the outside
+            of each sandwich with butter and cook until golden brown on both
+            sides and the cheese is melted, about 3 minutes per side.
+          </li>
           <li>Cut each sandwich in half and enjoy!</li>
         </ol>
       </div>
@@ -112,7 +126,6 @@
       <hr />
 
       <div>
-
         <h3>Leave a Comment</h3>
 
         <div id="hiddenAlertContainer" role="alert" class="visually-hidden">
@@ -121,23 +134,50 @@
 
         <div id="blog_comment_form">
           <!-- Text field for the comment -->
-          <textarea id="subject" name="subject" aria-label="Write a comment" placeholder="Write a comment ..." style="height:200px"></textarea>
-          
+          <textarea
+            id="subject"
+            name="subject"
+            aria-label="Write a comment"
+            placeholder="Write a comment ..."
+            style="height: 200px"
+          ></textarea>
+
           <!-- Input field for the comment user's name, email and website, with option to save the data for future comment -->
           <div id="comment_user_info_form">
-          <input aria-level="Enter your name" class="user_info_form" type="text" id="name" name="name" placeholder="Name" />
-          <input aria-level="Enter your email" class="user_info_form" type="text" id="email" name="email" placeholder="Email" />
+            <label for="name">Enter your name</label>
+            <input
+              aria-level="Enter your name"
+              class="user_info_form"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Ex. John Doe"
+            />
+
+            <label for="email">Enter your email</label>
+            <input
+              aria-level="Enter your email"
+              class="user_info_form"
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Ex. johndoe@example.com"
+            />
           </div>
 
-          <button type="button" class="pure-button pure-button-primary user_info_form" id="comment_submit_btn">Post Comment</button>
-
+          <button
+            type="button"
+            class="pure-button pure-button-primary user_info_form"
+            id="comment_submit_btn"
+          >
+            Post Comment
+          </button>
         </div>
-
       </div>
     </div>
 
-  <!-- Importing JQuery at the end of the HTML page -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Importing JQuery at the end of the HTML page -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- Importing local JS files -->
     <script src="js/script.js"></script>
